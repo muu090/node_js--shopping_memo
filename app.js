@@ -1,8 +1,16 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const mysql = require('mysql');
+const app = express();
 
 // CSSや画像ファイルを置くフォルダを指定するコード
 app.use(express.static('public'));
+
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: '#',
+//   password: 'password',
+//   database: '#'
+// });
 
 
 // top画面で表示
